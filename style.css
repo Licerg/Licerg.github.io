@@ -1,0 +1,203 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+body {
+    /* background: linear-gradient( rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.3) ), url('img/bg1.jpg');
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #333; */
+
+
+    height: 100vh;
+    background-image: url(img/bg1.jpg);
+    
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+       the content height is greater than the image height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+    
+    /* Pick a solid background color that will be displayed while the background image is loading */
+    background-color:#464646;
+
+
+}
+
+/* .bg{
+    background: linear-gradient( rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.3) ), url(img/bgBig.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #333;
+} */
+
+.navbarImg {
+    width: 30px;
+}
+
+.main {
+    padding-top: 150px;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:black;
+}
+
+
+#navbar {
+    transition: 0.3s;
+}
+
+
+
+.image {
+    /* border: 2px solid crimson; */
+    width: 100%;
+}
+
+/* .imgHead {
+    margin-top: 8rem;
+} */
+
+.shopInfo {
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.7rem;
+    line-height: 2rem;
+}
+
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+    color:red;
+    font-size: 1.4rem;
+}
+
+.adrLink,
+.adrLink:hover
+ {
+    color:white;
+ }
+
+.beerCup {
+     width: 35%;
+    position: absolute;
+
+}
+
+.imgBar {
+    margin-top: 220px;
+}
+
+.imgDop {
+    margin-top: 100px;
+}
+
+.pora {
+    width: 600px;
+}
+
+.imgPizza {
+    width: 350px;
+}
+
+#delivery {
+    margin-top: 40px;;
+}
+
+
+
+
+
+@media (max-width: 991px) {
+    /* .imgHead {
+        margin-top: 5rem;
+    } */
+    .shopInfo {
+        font-size: 1.2rem;
+    }
+    .beerCup {
+        display: none;
+    }
+    .imgBar {
+        margin-top: 70px;
+    }
+    .imgPizza {
+        display: none;
+    }
+   
+    .pora {
+        width: 400px;
+    }
+}
+
+
+@media (max-width:767px) {
+
+    .imgBar {
+        position: relative;
+    }
+  
+    .btnAdr {
+        margin-bottom: 130px;
+    }
+
+    /* .bg {
+        /* The file size of this background image is 93% smaller
+         * to improve page load speed on mobile internet connections */
+      background: linear-gradient( rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.3) ), url(img/bgsmall1.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: #333;
+      } */
+    
+    /* .shopInfo
+     {
+        display: none;
+    } */
+}
+@media (max-width: 480px) {
+    /* body {
+        margin-top: 40%;
+    } */
+    .btnAdr {
+        margin-bottom: 130px;
+    }
+    .pora {
+        width: 250px;
+    }
+    .main {
+        height: 100vh;
+        margin-top: 0;
+    }
+}
+@media (max-width: 1150px) {
+    .imgPizza {
+        width: 350px;
+    }
+   
+}
+
